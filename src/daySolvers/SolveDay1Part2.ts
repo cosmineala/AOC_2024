@@ -1,7 +1,7 @@
 import ISolver from "@/Interfaces/ISolver";
 import { registerSolver } from "@/factories/solverFactory";
 
-export default class SolveDay1Part1 implements ISolver {
+export default class SolveDay1Part2 implements ISolver {
     
     time = 0;
 

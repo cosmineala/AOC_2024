@@ -1,3 +1,5 @@
+import SolveDay1Part1 from "@/daySolvers/SolveDay1Part1";
+import SolveDay1Part2 from "@/daySolvers/SolveDay1Part2";
 import ISolver from "@/Interfaces/ISolver";
 
 export default function createSolver( day: number, part: number ): ISolver {
@@ -9,4 +11,5 @@ export function registerSolver( day: number, part: number, solver: ISolver ) {
 }
 
 const solvers = new Map<string, ISolver>();
-
+registerSolver(1, 1, new SolveDay1Part1());
+registerSolver(1, 2, new SolveDay1Part2());

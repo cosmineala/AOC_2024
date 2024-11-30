@@ -14,7 +14,10 @@ export default async function Page({ params, }: { params: Promise<{ slug: string
     let day = parseInt(slug);
 
     return (
-        <DayPart day={day} part={1} />
+        <main>
+            <DayPart day={day} part={1} />
+            <DayPart day={day} part={2} />
+        </main>
     );
 
 }
