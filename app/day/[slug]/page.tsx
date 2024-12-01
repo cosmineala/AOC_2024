@@ -16,6 +16,7 @@ export default async function Page({ params, }: { params: Promise<{ slug: string
     return (
         <main>
             <DayPart day={day} part={1} />
+            <div className="h-4" ></div>
             <DayPart day={day} part={2} />
         </main>
     );

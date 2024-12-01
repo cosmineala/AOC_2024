@@ -31,12 +31,12 @@ const Solver: React.FC<IProps> = ({ day, part }) => {
     return (
         <div>
             <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 onClick={() => { setRes(solver.solve(input.current)) }}
             >
                 Solve {day}.{part}
-                <br/>
-                {res}
             </button>
+            <div className="mt-2">{res}</div> 
         </div>
     );
 }
