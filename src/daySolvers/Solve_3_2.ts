@@ -13,7 +13,7 @@ export default class Solve_3_2 implements ISolver {
 
 
             let elements = line.split(' ').filter((num) => num != '');
-            let nums = elements.map((num) => parseInt(num));
+            let nums = elements.map((num) => parseInt(num)).filter((num) => !isNaN(num));
 
             elements: for (let i = 0; i < nums.length - 1; i++) {
                 let n = nums[i];
