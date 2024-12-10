@@ -1,3 +1,5 @@
+import Solve_10_1 from "@/daySolvers/Solve_10_1";
+import Solve_10_2 from "@/daySolvers/Solve_10_2";
 import Solve_2_1 from "@/daySolvers/Solve_2_1";
 import Solve_2_2 from "@/daySolvers/Solve_2_2";
 import Solve_3_1 from "@/daySolvers/Solve_3_1";
@@ -45,3 +47,5 @@ registerSolver(8, 1, () => new Solve_8_1());
 registerSolver(8, 2, () => new Solve_8_2());
 registerSolver(9, 1, () => new Solve_9_1());
 registerSolver(9, 2, () => new Solve_9_2());
+registerSolver(10, 1, () => new Solve_10_1());
+registerSolver(10, 2, () => new Solve_10_2());
