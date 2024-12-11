@@ -2,6 +2,8 @@ import Solve_10_1 from "@/daySolvers/Solve_10_1";
 import Solve_10_2 from "@/daySolvers/Solve_10_2";
 import Solve_11_1 from "@/daySolvers/Solve_11_1";
 import Solve_11_2 from "@/daySolvers/Solve_11_2";
+import Solve_12_1 from "@/daySolvers/Solve_12_1";
+import Solve_12_2 from "@/daySolvers/Solve_12_2";
 import Solve_2_1 from "@/daySolvers/Solve_2_1";
 import Solve_2_2 from "@/daySolvers/Solve_2_2";
 import Solve_3_1 from "@/daySolvers/Solve_3_1";
@@ -22,11 +24,11 @@ import SolveDay1Part1 from "@/daySolvers/SolveDay1Part1";
 import SolveDay1Part2 from "@/daySolvers/SolveDay1Part2";
 import ISolver from "@/Interfaces/ISolver";
 
-export default function createSolver( day: number, part: number ): ISolver {
-    return (solvers.get(`${day}_${part}`)as () => ISolver)(); 
+export default function createSolver(day: number, part: number): ISolver {
+    return (solvers.get(`${day}_${part}`) as () => ISolver)();
 }
 
-export function registerSolver( day: number, part: number, solver: () => ISolver ) {
+export function registerSolver(day: number, part: number, solver: () => ISolver) {
     solvers.set(`${day}_${part}`, solver);
 }
 
@@ -53,3 +55,5 @@ registerSolver(10, 1, () => new Solve_10_1());
 registerSolver(10, 2, () => new Solve_10_2());
 registerSolver(11, 1, () => new Solve_11_1());
 registerSolver(11, 2, () => new Solve_11_2());
+registerSolver(12, 1, () => new Solve_12_1());
+registerSolver(12, 2, () => new Solve_12_2());
